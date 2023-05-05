@@ -4,10 +4,38 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Phone to Imu</title>
+    <script src='../src/main.js'></script>
+
 </head>
 <body>
     <div>
-        start button
+        <button onclick='start_loop()'>
+            start
+        </button>
+        <div>
+            accelerometer output
+            <ul>
+                <li id='acc_x'>NA</li>
+                <li id='acc_y'>NA</li>
+                <li id='acc_z'>NA</li>
+            </ul>
+        </div> 
+        <div>
+            gravity output
+            <ul>
+                <li id='grav_x'>NA</li>
+                <li id='grav_y'>NA</li>
+                <li id='grav_z'>NA</li>
+            </ul>
+        </div> 
+        <div>
+            orient output
+            <ul>
+                <li id='gryo_quat'>NA</li>
+<!--                 <li id='acc_y'>NA</li>
+                <li id='acc_z'>NA</li>
+ -->            </ul>
+        </div> 
     </div>
 </body>
 </html>
