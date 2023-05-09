@@ -28,6 +28,7 @@ function start_loop(){
 
 function updateFields(){
     // console.log('updating')
+    if(sensors.acc.log.length == 0){return}
     let last_acc_entry = sensors.acc.log.length-1
     // console.log(last_acc_entry)
     let acc_read = sensors.acc.log[last_acc_entry]
